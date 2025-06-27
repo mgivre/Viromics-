@@ -27,15 +27,15 @@ que la formation de groupes d’orthologues viraux (VOGs).
 
 Les différents outils nécessaires à l’exécution du pipeline ont été installés au sein d’une image Singularity, garantissant un environnement reproductible et isolé, compatible avec les infrastructures de calcul haute performance. Ce conteneur permet de maîtriser les dépendances logicielles, de limiter les conflits entre versions, et de faciliter le déploiement du pipeline sur différents systèmes. Par ailleurs, chaque étape du pipeline a fait l’objet d’un script Bash ou Python dédié. Ces scripts ont été conçus en vue d’une intégration progressive dans un gestionnaire de workflow tel que Nextflow, couramment utilisé au sein de l’équipe GenEPII, afin d’assurer une exécution automatisée, reproductible et facilement traçable du pipeline complet.
 
-| Step                  | Tools                                       | Version                                     |
-| --------------------- | ------------------------------------------- | ------------------------------------------- |
-| Phage deduplication   | Blat (15) + Shah et al. script (10)         | v36 + v1                                    |
-| Gene calling          | Prodigal (16)                               | v2.6.3                                      |
-| Protein alignments    | FASTA36 (17) / DIAMOND (18) / MMseqs2 (19)  | v36.3.8i / v2.1.12 / v17.b804f              |
-| APS tree creation     | Shah et al. script (10) + RapidNJ (20)      | v1 + v2.3.2                                 |
-| APS tree manipulation | FigTree (21) + Treetool + Phylotreelib (23) | 20/06/2025 11:55:00 + v1.4.4 + v1 + v1.27.0 |
-| VOG definition        | Shah et al. script (10) + MCL (24)          | v1 + v22.282                                |
-| VOG annotation        | MUSCLE (25) + HH-suite3 (26)                | v5.3 + v3.3.0                               |
+| Step                  | Tools                                       | Version                        |
+| --------------------- | ------------------------------------------- | ------------------------------ |
+| Phage deduplication   | Blat (15) + Shah et al. script (10)         | v36 + v1                       |
+| Gene calling          | Prodigal (16)                               | v2.6.3                         |
+| Protein alignments    | FASTA36 (17) / DIAMOND (18) / MMseqs2 (19)  | v36.3.8i / v2.1.12 / v17.b804f |
+| APS tree creation     | Shah et al. script (10) + RapidNJ (20)      | v1 + v2.3.2                    |
+| APS tree manipulation | FigTree (21) + Treetool + Phylotreelib (23) | v1.4.4 + v1 + v1.27.0          |
+| VOG definition        | Shah et al. script (10) + MCL (24)          | v1 + v22.282                   |
+| VOG annotation        | MUSCLE (25) + HH-suite3 (26)                | v5.3 + v3.3.0                  |
 
 ## Scripts
 
