@@ -39,5 +39,15 @@ Les différents outils nécessaires à l’exécution du pipeline ont été inst
 
 ## Scripts
 
+| Étape                      | Lien du script associé                                                                                                                            | Fonctionnel ? |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Phage deduplication (BLAT) | [phages_dedup](scripts/blat_phages.sh)                                                                                                            | ✅            |
+| Gene calling               |                                                                                                                                                   | ✅ / ❌       |
+| Protein alignments         | [FASTA36](https://fasta.bioch.virginia.edu/) / [DIAMOND](https://github.com/bbuchfink/diamond) / [MMseqs2](https://github.com/soedinglab/MMseqs2) | ✅            |
+| APS tree creation          | [Script Shah et al.](#) + [RapidNJ](https://github.com/somme89/rapidNJ)                                                                           | ✅ / ❌       |
+| APS tree manipulation      | [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) + [Phylotreelib](https://github.com/lh3/treetool)                                           | ✅ / ❌       |
+| VOG definition             | [VOGs_def] (scripts/VOGs.sh)                                                                                                                      | ✅            |
+| VOG annotation             |                                                                                                                                                   | ❌            |
+
 **build_APStree_fasta36.sh**
 --NON FONCTIONNEL--
